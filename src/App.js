@@ -1,21 +1,13 @@
 import './App.css';
+import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
-  const title = "Welcome to Meerkat Blog";
-  const likes = 10000;
-  // const person = { name: 'Titus', age: 300 };
-  const link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-
   return (
     <div className="App">
+      <Navbar />
       <div className="content">
-        <h1>{ title }</h1>
-        <p>Liked { likes } times</p>
-        {/* <p>{ person }</p> */}
-
-        <p>YAY</p>
-        <a href={ link }>Curious Link</a>
-
+        <Home />
       </div>
     </div>
   );
